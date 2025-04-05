@@ -28,6 +28,8 @@
 
 #Application summmary
 
+#Tech stack used
+ Python,Django,DRF,Mysql
 
 #We have models 4  models
 #1-> user manager models this model is used manage the users normal users and superusers it is custom user model
