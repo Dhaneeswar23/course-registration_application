@@ -1,0 +1,48 @@
+
+#faculty creditionals
+
+{
+  "email": "samuel@faculty.com",
+  "password": "Faculty@123",
+  "name": "Sameul paul",
+  "role": "faculty"
+}
+
+#stduent creditionals
+
+{
+  "email": "sagar@student.com",
+  "password": "Student@123",
+  "name": "Sagar savanam",
+  "role": "student"
+}
+
+{
+  "email": "navyanth@student.com",
+  "password": "Student@123",
+  "name": "Navynath",
+  "role": "student"
+}
+
+
+
+#Application summmary
+
+
+#We have models 4  models
+#1-> user manager models this model is used manage the users normal users and superusers it is custom user model
+#2->USer model this model inherits the user manager model to manage the users students and faculty needs to register using these model fields
+#3-add course model in this model we have 2 fields one is course name, course code ,offred by is nothing but faculty model need to forgien key
+#4-registrer course  model stduents need to registered to this course user model and course models need to forgien keys 
+
+#seralizers is used convert your python objects to json format 
+#we need to create serillizer class for every model in models.py fields
+
+#views is logic for the student and faculty fucntionalities
+#we have student and faculty registre views and login view for both 
+#Faculty will add courses after loggin into application that courses can be register students login into application
+
+This is the overview of application 
+Notes:all urls can be handled by app level not project level
+
+
