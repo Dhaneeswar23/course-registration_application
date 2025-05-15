@@ -8,6 +8,7 @@ from .models import User, Course, CourseRegistration
 from .serializers import UsersSerializer, CourseSerializer
 from rest_framework.permissions import IsAuthenticated
 from django.contrib.auth.hashers import make_password
+from rest_framework.decorators import api_view
 
 # Create your views here.
 
@@ -104,3 +105,12 @@ class RegisterCourse(APIView):
 
         CourseRegistration.objects.create(student=user, course=course)
         return Response({'msg': 'Course registered successfully'}, status=status.HTTP_201_CREATED)
+    
+    
+@api_view(['GET'])
+def get_data(request):
+    users = User.objects.all()
+    serializer = UsersSerializer(users,many=True)
+    return Response(serializer.data)
+
+    
