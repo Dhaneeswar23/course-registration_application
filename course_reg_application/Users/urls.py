@@ -7,6 +7,8 @@ urlpatterns = [
     path('faculty/register/',views.RegisterFaculty.as_view(),name="register_view"),
     path('users/login/',views.LoginView.as_view(),name="login_users"),
     path('add/course/',views.AddCourse.as_view(),name="add_course"),
-    path('register/course/',views.RegisterCourse.as_view(),name="register_course"),    
+    path('register/course/',views.RegisterCourse.as_view(),name="register_course"),   
+    path('get_all_data/',views.get_data,name="data"),
+     
     
 ]
